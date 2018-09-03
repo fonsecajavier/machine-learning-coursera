@@ -49,6 +49,8 @@ for j = 1:display_rows
 end
 
 % Display Image
+display_array = flipud(display_array); % flip image upside down due to recent changes in gnuplot library
+
 h = imagesc(display_array, [-1 1]);
 
 % Do not show axis
